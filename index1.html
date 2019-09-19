@@ -6,201 +6,335 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Кинотеатр</title>
+    <title>Продажа билетов в кино в Иннополисе</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="build/style.css" />
 </head>
 
 <body>
     <header>
-        <a href="http://university.innopolis.ru" title="Университет Иннополис" target="_blank"><img src="images/logo-3.png" alt="Университет Иннополис"/></a>
-    </header>
-    <nav>
-        <a href="#" title="#">ЗАКАЗАТЬ БИЛЕТ</a> <a href="#" title="#">ПРЕИМУЩЕСТВА</a> <a href="#" title="#">ФИЛЬМЫ</a> <a href="#" title="#">КОНТАКТЫ</a>
-    </nav>
+        <a href="http://university.innopolis.ru" title="Университет Иннополис" target="_blank"><img
+                src="images/logo-3.png" alt="Университет Иннополис" /></a>
 
-    <div>
-        Ваш город: <u>Москва</u>
-    </div>
-    <img src="images/cinema.jpg" alt="Кинотеатр"/>
-    
-    <div>
-        <h1>Закажите билет в кино</h1>
+
+        <nav>
+            <ul>
+                <a href="#ticket order" title="Заказать билет">ЗАКАЗАТЬ БИЛЕТ</a> <a href="#advantages"
+                    title="Преимущества">ПРЕИМУЩЕСТВА</a> <a href="#films" title="Фильмы">ФИЛЬМЫ</a> <a href="#"
+                    title="#">КОНТАКТЫ
+                </a>
+            </ul>
+        </nav>
+
+
+
+
+        <div>
+            Ваш город: <u>Москва</u>
+        </div>
+        <img src="images/cinema.jpg" alt="Кинотеатр" />
+    </header>
+
+    <section id="ticket order">
+        <h1 title="Закажите билет в кино">Закажите билет в кино</h1>
+
         <b>Всем покупателям подарок!</b>
-    </div>
-    
+    </section>
+
     <section>
-        <b>
+        <h2 title="Добро пожаловать!">
             Добро пожаловать!
-        </b>
+        </h2>
         <p>
-            Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
+            Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam
+            quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
             <br>
             <br>
-            Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
+            Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam
+            quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
         </p>
     </section>
-    
-    <b>
-        Почему мы?
-    </b>
-    
-    <section>
-        <img src="images/b2_icon_1.jpg" alt="icon_1"/>
-        <br>
-        <b>
-            Большие экраны
-        </b>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.
-        </p>
+    <section id="advantages">
+
+        <h2 title="Почему мы?">
+            Почему мы?
+        </h2>
+
+
+        <div>
+            <img src="images/b2_icon_1.jpg" alt="icon_1" />
+            <br>
+            <h3 title="Большие экраны">
+                Большие экраны
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error
+                expedita
+                illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero
+                voluptates.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/b2_icon_2.jpg" alt="icon_2" />
+            <br>
+            <h3 title="Объёмный звук">
+                Объёмный звук
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/b2_icon_3.jpg" alt="icon_3" />
+            <br>
+            <h3 title="Удобные кресла">
+                Удобные кресла
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error
+                expedita
+                illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero
+                voluptates.
+            </p>
+        </div>
     </section>
-    
-    <section>
-        <img src="images/b2_icon_2.jpg" alt="icon_2"/>
-        <br>
-        <b>
-            Объемный звук
-        </b>
-        <p>
-        Lorem ipsum dolor sit amet.
-        </p>
-    </section>
-    
-    <section>
-        <img src="images/b2_icon_3.jpg" alt="icon_3"/>
-        <br>
-        <b>
-            Удобные кресла
-        </b>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.
-        </p>
-    </section>
-    
-    <div>
-        <b>
+
+    <div id="films">
+
+        <h2 title="Выберите фильм">
             Выберите фильм
-        </b>
+        </h2>
+
+        <table border="" cellpadding="" cellspacing="">
+            <thead>
+                <th>Начало сеанса</th>
+                <th>Название фильма</th>
+                <th>Жанр</th>
+            </thead>
+            <br>
+            <tr>
+                <td>10:00</td>
+                <td><a href="https://www.kinopoisk.ru/film/1008445/" title="Кинопоиск" target="_blank">Человек-паук</a>
+                </td>
+                <td> фантастика, боевик, приключения</td>
+            </tr>
+            <br>
+            <tr>
+                <td>12:00</td>
+                <td><a href="https://www.kinopoisk.ru/film/sobachya-zhizn-2-2019-1122114/" title="Кинопоиск"
+                        target="_blank">Собачья жизнь 2</a></td>
+                <td>фэнтези, драма, комедия</td>
+            </tr>
+            <br>
+            <tr>
+                <td>14:00</td>
+                <td><a href="https://www.kinopoisk.ru/film/istoriya-igrushek-4-2019-846824/" title="Кинопоиск"
+                        target="_blank">История игрушек 4</a></td>
+                <td>мультфильм, фэнтези, комедия</td>
+            </tr>
+            <br>
+            <tr>
+                <td>16:00</td>
+                <td><a href="https://www.kinopoisk.ru/film/lyudi-v-chernom-interneshnl-2019-693730/" title="Кинопоиск"
+                        target="_blank">Люди в черном: Интернэшнл</a></td>
+                <td>фантастика, боевик, комедия</td>
+            </tr>
+        </table>
         <p>
-            Начало сеанса 	Название фильма 	Жанр
-            <br>
-            10:00	<a href="https://www.kinopoisk.ru/film/1008445/" title="Кинопоиск" target="_blank">Человек-паук</a>	фантастика, боевик, приключения
-            <br>
-            12:00	<a href="https://www.kinopoisk.ru/film/sobachya-zhizn-2-2019-1122114/" title="Кинопоиск" target="_blank">Собачья жизнь 2</a>	фэнтези, драма, комедия
-            <br>
-            14:00	<a href="https://www.kinopoisk.ru/film/istoriya-igrushek-4-2019-846824/" title="Кинопоиск" target="_blank">История игрушек 4</a>	мультфильм, фэнтези, комедия
-            <br>
-            16:00	<a href="https://www.kinopoisk.ru/film/lyudi-v-chernom-interneshnl-2019-693730/" title="Кинопоиск" target="_blank">Люди в черном: Интернэшнл</a>	фантастика, боевик, комедия
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
+            veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
+            quibusdam sunt!
         </p>
     </div>
-    
+
     <section>
-        <img src="images/b4_img.jpg" alt="icon_4"/>
+        <img src="images/b4_img.jpg" alt="icon_4" />
         <br>
-        <b>
+        <h3 title="Подарок каждому!">
             Подарок каждому!
-        </b>
+        </h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi
+            expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde
+            velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum,
+            cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit
+            sequi sint, tenetur unde velit veniam!
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi
+            expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde
+            velit veniam!
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi
+            expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde
+            velit veniam!
         </p>
         <span>Получить подарок</span>
     </section>
-    
+
     <div>
-        <b>Фильмы</b>
+        <h2>Фильмы</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum,
+            laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
         </p>
-        <img src="images/mov1.jpg" alt="Человек-паук"/>
-        <br>
-        <p>Человек-паук</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>    
-        <img src="images/mov2.jpg" alt="Собачья жизнь 2"/>
-        <br>
-        <p>
-            Собачья жизнь 2
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>
-        <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл"/>
-        <br>
-        <p>
-            Люди в черном: Интернэшнл
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>
-        <img src="images/mov1.jpg" alt="Человек-паук"/>
-        <br>
-        <p>Человек-паук</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>    
-        <img src="images/mov2.jpg" alt="Собачья жизнь 2"/>
-        <br>
-        <p>
-            Собачья жизнь 2
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>
-        <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл"/>
-        <br>
-        <p>
-            Люди в черном: Интернэшнл
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>
-        <img src="images/mov1.jpg" alt="Человек-паук"/>
-        <br>
-        <p>Человек-паук</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>    
-        <img src="images/mov2.jpg" alt="Собачья жизнь 2"/>
-        <br>
-        <p>
-            Собачья жизнь 2
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>
-        <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл"/>
-        <br>
-        <p>
-            Люди в черном: Интернэшнл
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-        </p>
-   
-    </div> 
-    
-    <div>    
-    Имя*
-    
-    Выбор1
-    Выбор2
-    Комментарий
-    Я согласен на обработку персональных данных
-    
-    Загрузить файл
-    Отправить
+        <div>
+            <img src="images/mov1.jpg" alt="Человек-паук" />
+            <br>
+            <p>Человек-паук</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+
+        </div>
+
+        <div>
+            <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
+            <br>
+            <p>
+                Собачья жизнь 2
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+        </div>
+
+        <div>
+            <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
+            <br>
+            <p>
+                Люди в черном: Интернэшнл
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+        </div>
+        <div>
+            <img src="images/mov1.jpg" alt="Человек-паук" />
+            <br>
+            <p>Человек-паук</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+
+        </div>
+
+        <div>
+            <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
+            <br>
+            <p>
+                Собачья жизнь 2
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+        </div>
+
+        <div>
+            <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
+            <br>
+            <p>
+                Люди в черном: Интернэшнл
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+        </div>
+        <div>
+            <img src="images/mov1.jpg" alt="Человек-паук" />
+            <br>
+            <p>Человек-паук</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+
+        </div>
+
+        <div>
+            <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
+            <br>
+            <p>
+                Собачья жизнь 2
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+        </div>
+
+        <div>
+            <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
+            <br>
+            <p>
+                Люди в черном: Интернэшнл
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+        </div>
+
+
     </div>
+
+    <form action="order.php">
+        <p><input type="text" required placeholder="Имя*" /></p>
+        <p><input type="email" required placeholder="E@mail"</p>
+        <p> <select required>
+                <option>Выбор1</option>
+                <option>Выбор2</option>
+                <option>Выбор3</option>
+                <option>Выбор4</option>
+                <option>Выбор5</option>
+                <option>Выбор6</option>
+                <option>Выбор7</option>
+                <option>Выбор8</option>
+                <option>Выбор9</option>
+                <option>Выбор10</option>
+            </select>
+        </p>
+        <p> <input type="radio" required name="name" id="1" />
+            <label for="1">Выбор1</label>
+        </p>
+        <p>
+            <input type="radio" required name="name" id="2" />
+            <label for="2">Выбор2</label>
+        </p>
+        <p><textarea placeholder="Комментарий"></textarea></p>
+        <p><input type="checkbox" required id="agree" />
+            <label for="agree">Я согласен на обработку персональных данных</label></p>
+        <p><input type="file" /></p>
+        <p><button type="submit">Заказать</button></p>
+    </form>
+
 </body>
 
 </html>
