@@ -9,6 +9,7 @@
     <title>Продажа билетов в кино в Иннополисе</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="build/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -101,53 +102,71 @@
         </div>
     </section>
 
-    <div id="films">
+    <section id="films">
+        <div class="movie-list">
+            <h2 class="movie-list__header" title="Выберите фильм">
+                Выберите фильм
+            </h2>
+            <div class="container">
+                <table class="movie-list__table">
+                    <thead>
+                        <th>Time</th>
+                        <th>Stuff that will happen</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="movie-list__table_1">10:00</td>
+                            <td class="movie-list__table_1"><a href="https://www.kinopoisk.ru/film/1008445/"
+                                    title="Кинопоиск" target="_blank">Человек-паук</a>
+                            </td>
+                            <td class="movie-list__table_1"> фантастика, боевик, приключения</td>
+                        </tr>
 
-        <h2 title="Выберите фильм">
-            Выберите фильм
-        </h2>
+                        <tr>
+                            <td class="movie-list__table_2">12:00</td>
+                            <td class="movie-list__table_2"><a
+                                    href="https://www.kinopoisk.ru/film/sobachya-zhizn-2-2019-1122114/"
+                                    title="Кинопоиск" target="_blank">Собачья жизнь 2</a></td>
+                            <td class="movie-list__table_2">фэнтези, драма, комедия</td>
+                        </tr>
 
-        <table border="" cellpadding="" cellspacing="">
-            <thead>
-                <th>Начало сеанса</th>
-                <th>Название фильма</th>
-                <th>Жанр</th>
-            </thead>
-            <br>
-            <tr>
-                <td>10:00</td>
-                <td><a href="https://www.kinopoisk.ru/film/1008445/" title="Кинопоиск" target="_blank">Человек-паук</a>
-                </td>
-                <td> фантастика, боевик, приключения</td>
-            </tr>
-            <br>
-            <tr>
-                <td>12:00</td>
-                <td><a href="https://www.kinopoisk.ru/film/sobachya-zhizn-2-2019-1122114/" title="Кинопоиск"
-                        target="_blank">Собачья жизнь 2</a></td>
-                <td>фэнтези, драма, комедия</td>
-            </tr>
-            <br>
-            <tr>
-                <td>14:00</td>
-                <td><a href="https://www.kinopoisk.ru/film/istoriya-igrushek-4-2019-846824/" title="Кинопоиск"
-                        target="_blank">История игрушек 4</a></td>
-                <td>мультфильм, фэнтези, комедия</td>
-            </tr>
-            <br>
-            <tr>
-                <td>16:00</td>
-                <td><a href="https://www.kinopoisk.ru/film/lyudi-v-chernom-interneshnl-2019-693730/" title="Кинопоиск"
-                        target="_blank">Люди в черном: Интернэшнл</a></td>
-                <td>фантастика, боевик, комедия</td>
-            </tr>
-        </table>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
-            veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
-            quibusdam sunt!
-        </p>
-    </div>
+                        <tr>
+                            <td class="movie-list__table_1">14:00</td>
+                            <td class="movie-list__table_1"><a
+                                    href="https://www.kinopoisk.ru/film/istoriya-igrushek-4-2019-846824/"
+                                    title="Кинопоиск" target="_blank">История игрушек 4</a></td>
+                            <td class="movie-list__table_1">мультфильм, фэнтези, комедия</td>
+                        </tr>
+
+                        <tr>
+                            <td class="movie-list__table_2">16:00</td>
+                            <td class="movie-list__table_2"><a
+                                    href="https://www.kinopoisk.ru/film/lyudi-v-chernom-interneshnl-2019-693730/"
+                                    title="Кинопоиск" target="_blank">Люди в черном: Интернэшнл</a></td>
+                            <td class="movie-list__table_2">фантастика, боевик, комедия</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <div class="ggg">
+                    <tr>
+                        <td colspan="3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati
+                            quam rem
+                            repellendus
+                            veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi
+                            pariatur quaerat
+                            quam,
+                            qui
+                            quibusdam sunt!
+                        </td>
+                    </tr>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
     <section>
         <img src="images/b4_img.jpg" alt="icon_4" />
@@ -307,8 +326,7 @@
 
     <form action="order.php">
         <p><input type="text" required placeholder="Имя*" /></p>
-        <p><input type="email" required placeholder="E@mail"</p>
-        <p> <select required>
+        <p><input type="email" required placeholder="E@mail" </p> <p> <select required>
                 <option>Выбор1</option>
                 <option>Выбор2</option>
                 <option>Выбор3</option>
