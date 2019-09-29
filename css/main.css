@@ -98,6 +98,11 @@ h6 {
     font-weight: 700;
     color: #ffffff;
     background: #a3cc40;
+
+}
+.movie-list .container .mtable thead th a {
+    text-decoration: none;
+    color: #ffffff;
 }
 .movie-list .container .mtable thead th:nth-of-type(1) {
     text-align: center;
@@ -114,7 +119,10 @@ h6 {
     width: 670px;
 }
 .movie-list .container .mtable thead th:nth-of-type(3) {
-    text-align:center;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 0.01em;
+    padding: 18px 0 16px 0px;
     width: 130px;
 }
 
