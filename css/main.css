@@ -413,7 +413,7 @@ body {
 h1 {
     font-size: 80px;
     color:white;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 h2 {
@@ -423,16 +423,14 @@ h2 {
 }
 
 h3 {
-    color: #242424;
     font-size: 35px;
 }
 
 p {
     font-size: 14px;
     font-weight: 200;
-    color: black;
     line-height: 1.2;
-    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 a {
@@ -443,87 +441,152 @@ a {
 /* Common */
 
 /* Components */
+.head-block {
+    background: url(../images/background-cinema.jpg) no-repeat top center / cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.head-block:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 5.55rem solid #fff;
+}
 .head-container {
-    background: url(/images/cinema.jpg);
-    background-repeat: no-repeat;
-    height: 768px;
-    width: 1367px;
-    margin: auto;
+padding: 1.1rem 0 0;
+width: 1030px;;
+margin: auto;
 }
 
-.head-container .logo, .head-container nav, .head-container ul li {
-    display: inline-block;
-    line-height: 46px;
-    margin-top: 52px;
+header {
+    padding: 2rem o o;
 }
 
+.logo, .head-block__menu, .head-block__city {
+    float: left;
+}
+.logo{
+    width: 25%;
+}
+.head-block__menu {
+    width: 50%;
+}
+
+.head-block__city {
+    width: 25%;
+    padding: 1.1rem 0 0;
+    float: left;
+    color: white;
+}
 .menu {
-    margin-left: 260px;
+    padding: 1.1rem 0 0;
     text-transform: uppercase;
 
 }
-
+.menu li{
+    display: inline-block;
+    padding-left: 1.1rem;
+}
 .menu-ref:hover {
 color: #90d23d;
 
 }
 
-.logo {
-    margin-left: 167px;
-}
-
-.head-container ul li {
-    margin-left: 45px;
-}
 
 
 .theme {
-    margin-top: 149px;
-    text-align: center;
-   
+   /**/
+   padding-top: 172px;
+   width: 1030px;
+   margin: auto;
+   text-align: center;
 }
 
+#ticket-order {
+    margin: auto;
+}
+
+.theme-title {
+    margin: auto;
+    margin-bottom: 28px;
+}
 .theme-sub {
-    margin-top: 27px;
     color:white;
-    font-weight: 400;
+    font-weight: 500;
+    margin: auto;
 }
-
+.welcome-wrap {
+    width: 1030px;;
+    margin: auto;
+    position: relative;
+}
 .welcome {
     width: 518px;
-}
-
+    height: 267px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+    position: absolute;
+    top: -129px;
+    right: 0;
+    z-index: 1;
+    }
+.welcome-title {
+    font-size: 40px;
+    padding:  40px 90px 0 23px;
+    }
 .welcome-text {
-    margin-top: 26px;
+    padding: 33px 90px 0 23px;
+}    
+
+.advantages-container {
+    padding-top: 85px;
 }
 .advantages-description {
-    margin-top: 122px;
-    margin: 122px auto auto 174px;
+    margin: 122px auto 174px;
+    width: 1030px;
+    overflow: hidden;
     
 }
 .advantages {
-    display: inline-block;
-    width: 284px;
+    float: left;
+    width: 33.3%;
     text-align: center;
-    margin-left: 72px;
 }
-
+.image-wrap {
+    height: 211px;
+}
+.image-wrap {
+  position: relative;
+  margin-bottom: 43px;
+}
+.image-wrap img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
 .advantages p {
     margin-top: 16px;
 }
-.movie-list {
-    padding: 100px 0;
+#films {
+    margin-bottom: 157px;
+    margin-top: 128px;
 }
-
 .movie-list .list_header {
     font-size: 50px;
     color: #252525;
     font-weight: 700;
-    margin: 0 0 77px 0;
     text-align: center;
 }
 
 .container {
+    padding-top: 80px;
     max-width: 1030px;
     min-height: 375px;
     margin: 0 auto;
@@ -633,12 +696,35 @@ color: #90d23d;
     letter-spacing: 0.01em;
     text-align: center; 
   }
+
+  .present {
+      background: url(../images/background2.png) no-repeat top center / cover;
+      height: 105vh;
+      background-size: cover;
+      width: 100%;
+  }
+  .present-wrap {
+      width: 1030px;
+      margin: auto;
+      position: relative;
+  }
+  .present-image {
+      float: left;
+      position: absolute;
+      left: 0;
+      top: -50px;
+      border-radius: 100%;
+  }
 .present-content {
+    padding-top: 140px;
     width: 669px;
     text-align: right;
-    margin:auto 163px auto auto;
+   float: right;
+   color: #ffffff;
 }
-
+.present-text {
+    padding-top: 57px;
+}
   .take-present {
       margin-top: 37px;
       border-radius: 15px;
@@ -650,6 +736,12 @@ color: #90d23d;
   }
   .take-present:active {
       border: none;
+  }
+  .clear {
+    clear: both;
+  }
+  .d {
+      margin-top: 92px;
   }
   form {
     width: 400px;
@@ -724,4 +816,5 @@ color: #90d23d;
     border-right: 1px solid transparent;
     border-bottom: 1px solid transparent;
     }
-    /* \Components */
+    /* \Components */.Base {
+  
