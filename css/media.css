@@ -1,0 +1,417 @@
+@media (max-width: 1200px) {
+    p {
+        font-size: 1rem;
+    }
+
+    .welcome {
+        height: 19.6875rem;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .head-container {
+        width: 48rem;
+    }
+
+    #advantages-block {
+        width: 48rem;
+    }
+
+    .container {
+        width: 48rem;
+    }
+
+    .present-wrap {
+        width: 48rem;
+    }
+
+    .d {
+        width: 48rem;
+    }
+
+    .fd {
+        width: 48rem;
+    }
+
+    #films {
+        width: 48rem;
+    }
+
+    .logo {
+        width: 20%;
+        padding-left: 0.8rem;
+    }
+
+    .menu li {
+        padding-right: 1rem;
+    }
+
+    .head-block__menu {
+        padding-left: 12.125rem;
+        font-size: 0.8rem;
+        width: 86%;
+    }
+
+    .head-block__city {
+        float: left;
+        margin-left: 2.3rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .theme-sub {
+        font-size: 2.725rem;
+    }
+
+    .head-block {
+        min-height: 0;
+    }
+
+    .theme {
+        text-align: center;
+        padding-bottom: 17rem;
+    }
+
+    .welcome {
+        width: 28.55rem;
+        top: -11.125rem;
+    }
+
+    .present-content {
+        padding-top: 0.85rem;
+        width: 40.8125rem;
+        position: absolute;
+        right: 0;
+        top: 12.9rem;
+    }
+
+    .present-text {
+        padding-top: 1.0625rem;
+    }
+
+    .take-present {
+        margin-top: 0;
+    }
+
+    .fd-description {
+        padding: 0.7375rem;
+    }
+
+    .fd-text1 {
+        font-size: 1.6875rem;
+        margin: 0 0 0.325rem;
+        line-height: 1.5rem;
+    }
+
+    .fd-text2 {
+        font-size: 0.925rem;
+    }
+
+    .fd-hr {
+        margin: 0 0 0.075rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .head-container {
+        width: 37rem;
+    }
+
+    #advantages-block {
+        width: 37rem;
+    }
+
+    .container {
+        width: 37rem;
+    }
+
+    .present-wrap {
+        width: 37rem;
+    }
+
+    .d {
+        width: 37rem;
+    }
+
+    .fd {
+        width: 37rem;
+    }
+
+    #films {
+        width: 37rem;
+    }
+
+    .menu-burger span,
+    .menu-burger::before,
+    .menu-burger::after {
+        content: "";
+        width: 100%;
+        background: #ffffff;
+        height: 1px;
+        display: block;
+        position: absolute;
+    }
+
+    .menu-burger {
+        position: relative;
+        width: 20px;
+        height: 21px;
+        cursor: pointer;
+        margin-left: 5rem;
+    }
+
+    .menu-burger span {
+        top: 50%;
+    }
+
+    .menu-burger::before {
+        top: 0;
+    }
+
+    .menu-burger::after {
+        bottom: 0;
+    }
+
+    .menu2 {
+        display: block;
+        float: left;
+    }
+
+    .logo {
+        width: 34%;
+    }
+
+    .head-block__city {
+        margin-left: 9.3rem;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 3rem 1rem;
+        background: rgb(45, 76, 0, 0.7);
+        z-index: 2;
+    }
+
+    .menu li {
+        clear: both;
+        display: block;
+        margin-bottom: 1rem;
+        line-height: 1rem;
+    }
+
+    .welcome {
+        position: static;
+        width: 100%;
+    }
+
+    .theme {
+        padding-bottom: 10rem;
+    }
+
+    .prim {
+        height: 13.625rem;
+        width: 13.625rem;
+    }
+
+    .present-content {
+        top: 10.9rem;
+    }
+    .advantages {
+        margin: auto;
+    }
+
+    .adv-wrap {
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+
+    .fd {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "p-1 p-1 p-1"
+            "p-2 p-2 p-2"
+            "p-3 p-3 p-3";
+    }
+
+    .p-1 {
+        grid-area: p-1;
+    }
+
+    .p-2 {
+        grid-area: p-3;
+    }
+
+    .p-3 {
+        grid-area: p-2;
+    }
+
+    .p-5 {
+        display: none;
+    }
+
+    .p-6 {
+        display: none;
+    }
+
+    .p-7 {
+        display: none;
+    }
+
+    .p-9 {
+        display: none;
+    }
+
+    .p-10 {
+        display: none;
+    }
+
+    .p-11 {
+        display: none;
+    }
+    .fd-item {
+        width: auto;
+        margin: auto;
+    }
+    .fd-text1 {
+        padding: 1rem;
+        line-height: 2rem;
+    }
+  
+    .fd-text2 {
+        padding: 1rem;
+    }
+    .fd-hr {
+        width: 5rem;
+        height: 0.5rem;
+        margin-left: 1rem;
+    }
+    .fd-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .head-container {
+        width: 24rem;
+    }
+
+    #advantages-block {
+        width: 24rem;
+    }
+
+    .container {
+        width: 24rem;
+    }
+
+    .present-wrap {
+        width: 24rem;
+    }
+
+    .d {
+        width: 24rem;
+    }
+
+    .fd {
+        width: 24rem;
+    }
+
+    #films {
+        width: 24rem;
+    }
+
+    .head-block__city {
+        display: none;
+    }
+    .menu2 {
+        float: left;
+        margin-left: 3rem;
+    }
+
+    .menu-burger {
+        float: right;
+    }
+
+    header {
+        margin-bottom: 10.8125rem;
+    }
+
+    .theme-title {
+        padding-bottom: 2.75rem;
+    }
+
+    h1 {
+        line-height: 4rem;
+    }
+
+    .welcome {
+        width: 23.55rem;
+        height: 25.6875rem;
+    }
+
+    .welcome-content {
+        width: 19.6875rem;
+        padding: 2.375rem 1.625rem 2.0625rem 2.375rem;
+    }
+
+    .adv-wrap2 {
+        padding-bottom: 4rem;
+    }
+    .adv-wrap {
+        flex-direction: column-reverse;
+    }
+
+    #films {
+        margin-top: 3rem;
+    }
+
+    .container {
+        overflow: scroll;
+    }
+
+    .mtable tr td:nth-of-type(2) {
+        padding-right: 0;
+    }
+
+    .movie-list .container .mtable tr td:nth-of-type(3) {
+        padding: 1.375rem 0 0.875rem 1rem;
+    }
+
+    .movie-list .container .mtable th:nth-of-type(3) {
+        padding: 1.125rem 0 1rem 1rem;
+    }
+
+    .movie-list .container .mtable tr td:nth-of-type(4) {
+        padding: 2.25rem 1rem 0.875rem 1rem;
+    }
+
+    .ggg {
+        padding: 0 2.25rem 0 2.25rem;
+    }
+
+    .present-content {
+        text-align: center;
+        width: 20.8125rem;
+    }
+
+    .d {
+        margin-top: 16rem;
+    }
+
+}
