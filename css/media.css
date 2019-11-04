@@ -1,3 +1,19 @@
+@media (max-width: 1600px) {
+    .owl-nav {
+        position: relative;
+        top: -5.625rem;
+    }
+    
+    .owl-prev {
+        position: absolute;
+        left: -1rem;
+    }
+    
+    .owl-next {
+        position: absolute;
+        right: -1rem;
+    }
+}
 @media (max-width: 1200px) {
     p {
         font-size: 1rem;
@@ -6,6 +22,21 @@
     .welcome {
         height: 19.6875rem;
     }
+
+    .owl-nav {
+        position: relative;
+        top: -5.625rem;
+    }
+    
+    .owl-prev {
+        position: absolute;
+        left: -1rem;
+    }
+    
+    .owl-next {
+        position: absolute;
+        right: -1rem;
+    }
 }
 
 
@@ -13,6 +44,25 @@
     html {
         font-size: 12px;
     }
+
+    .fd-description {
+        padding: 1.6375rem;
+    }
+  
+    .fd-text1 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+ 
+    .fd-hr {
+        margin: 0 0 0.875rem;
+    }
+    .owl-nav {
+        position: relative;
+        top: -9rem;
+    }
+ 
 }
 
 @media (max-width: 800px) {
@@ -38,6 +88,11 @@
 
     .fd {
         width: 48rem;
+    }
+
+    .owl-nav {
+        position: relative;
+        top: -7.625rem;
     }
 
     #films {
@@ -116,9 +171,7 @@
         font-size: 0.925rem;
     }
 
-    .fd-hr {
-        margin: 0 0 0.075rem;
-    }
+
 
 }
 
@@ -231,13 +284,17 @@
         top: 10.9rem;
     }
     .advantages {
-        margin: auto;
+        margin: 0;
     }
 
     .adv-wrap {
         flex-wrap: wrap;
         flex-basis: 50%;
         justify-content: center;
+    }
+
+    .owl-nav {
+        top: -16.625rem;
     }
 
     .fd {
@@ -289,22 +346,33 @@
         width: auto;
         margin: auto;
     }
+    .fd-description {
+        border-radius: 2rem;
+    }
     .fd-text1 {
-        padding: 1rem;
-        line-height: 2rem;
+        font-size: 3rem;
+        padding: 2rem;
+        line-height: 2.5rem;
     }
   
     .fd-text2 {
-        padding: 1rem;
+        font-size: 2rem;
+        padding: 2rem;
     }
     .fd-hr {
-        width: 5rem;
+        width: 7rem;
         height: 0.5rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
+
     .fd-links {
-        justify-content: center;
+        margin: auto;
     }
+
+    .fd-l + .fd-l {
+        margin-left: 2rem;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -412,6 +480,25 @@
 
     .d {
         margin-top: 16rem;
+    }
+
+    .fd-text1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .fd-text2 {
+        font-size: 2rem;
+        padding: 0 0 0 1rem;
+    }
+
+    .fd-hr {
+        margin-left: 1rem;
+    }
+
+    .owl-nav {
+        position: relative;
+        top: -12.625rem;
     }
 
 }
