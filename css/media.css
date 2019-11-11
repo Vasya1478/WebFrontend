@@ -38,6 +38,10 @@
         right: -1rem;
     }
 }
+@media (max-height: 1800px) {
+    .head-block {
+        min-height: 40rem;
+}
 
 
 @media (max-width: 1000px) {
@@ -284,7 +288,7 @@
         top: 10.9rem;
     }
     .advantages {
-        margin: 0;
+        margin: 0 auto;
     }
 
     .adv-wrap {
@@ -477,9 +481,12 @@
         text-align: center;
         width: 20.8125rem;
     }
+    .present {
+        height: 55rem;
+    }
 
     .d {
-        margin-top: 16rem;
+        margin-top: 5rem;
     }
 
     .fd-text1 {
@@ -500,5 +507,161 @@
         position: relative;
         top: -12.625rem;
     }
+    input[type="file"] + label {
+        padding: 0.9375rem 0 0.9375rem 0;
+    }
 
 }
+
+@media(max-width: 320px) {
+    input {
+        width: 20rem;
+    }
+    .head-container {
+        width: 20rem;
+    }
+
+    #advantages-block {
+        width: 20rem;
+    }
+
+    .container {
+        width: 20rem;
+    }
+
+    .present-wrap {
+        width: 20rem;
+    }
+
+    .d {
+        width: 20rem;
+    }
+
+    .fd {
+        width: 20rem;
+    }
+
+    #films {
+        width: 20rem;
+    }
+
+    header {
+        margin-bottom: 10.8125rem;
+    }
+    .menu2 {
+        margin-left: 1rem;
+    }
+
+    .theme-title {
+        padding-bottom: 2.75rem;
+    }
+
+    h1 {
+        line-height: 4rem;
+    }
+
+    .welcome {
+        width: 20rem;
+        height: 25.6875rem;
+    }
+
+    .welcome-content {
+        width: 16rem;
+        padding: 2.375rem 1.625rem 2.0625rem 2.375rem;
+    }
+
+    .adv-wrap2 {
+        padding-bottom: 4rem;
+    }
+    .adv-wrap {
+        flex-direction: column-reverse;
+    }
+
+    #films {
+        margin-top: 3rem;
+    }
+
+    .container {
+        overflow: scroll;
+    }
+
+    .mtable tr td:nth-of-type(2) {
+        padding-right: 0;
+    }
+
+    .movie-list .container .mtable tr td:nth-of-type(3) {
+        padding: 1.375rem 0 0.875rem 1rem;
+    }
+
+    .movie-list .container .mtable th:nth-of-type(3) {
+        padding: 1.125rem 0 1rem 1rem;
+    }
+
+    .movie-list .container .mtable tr td:nth-of-type(4) {
+        padding: 2.25rem 1rem 0.875rem 1rem;
+    }
+
+    .ggg {
+        padding: 0 2.25rem 0 2.25rem;
+    }
+    .present {
+        height: 57rem;
+    }
+    .present-content {
+        text-align: center;
+        width: 20rem;
+    }
+
+    .d {
+        margin-top: 1rem;
+    }
+
+    .fd-text1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .fd-text2 {
+        font-size: 2rem;
+        padding: 0 0 0 1rem;
+    }
+
+    .fd-hr {
+        margin-left: 1rem;
+    }
+
+    .owl-nav {
+        position: relative;
+        top: -12.625rem;
+    }
+    #map {
+        width: 20rem;
+        margin: auto;
+    }
+    .ftr {
+        width: 20rem;
+        margin: auto;
+    }
+    .ficon{
+        padding: 0rem;
+    }
+    .ficon + .ficon {
+        padding-left: 0.1rem;
+    }
+    .footer-text {
+        width: 20rem;
+    }
+
+    form {
+        width: 20rem;
+        margin: auto;
+    }
+    input, textarea, select {
+        padding: 0.9375rem  0 0.6875rem;
+        }
+    input[type="file"] + label {
+        padding: 0.9375rem 0 0.9375rem 0;
+    }
+
+}
+

@@ -527,7 +527,7 @@ border-bottom: 1px solid #90d23d;
     justify-content: space-between;
 }
 .advantages {
-    
+    margin: 0 auto;
     width: 18.375rem;
     text-align: center;
 }
@@ -676,6 +676,7 @@ border-bottom: 1px solid #90d23d;
     box-sizing: border-box;
     padding: 1.25rem 3.125rem 0.875rem 0;
     width: 6.25rem;
+    vertical-align: middle;
   }
   
   .ggg {
@@ -952,6 +953,7 @@ border-bottom: 1px solid #90d23d;
     input[type="file"] {
     position: absolute;
     opacity: 0;
+    padding: 0;
     width: 100%;
     height: 0;
     z-index: 1;
