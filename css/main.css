@@ -731,7 +731,8 @@ border-bottom: 1px solid #90d23d;
     padding-bottom: 1.125rem;
 }
  
-  .dfg {
+.dfg {
+    color: #fff;
     margin-top: 0.78125rem;
     border-radius: 0.9375rem;
     border:1px solid rgb(144, 210, 61);
@@ -978,5 +979,41 @@ border-bottom: 1px solid #90d23d;
     border-right: 1px solid transparent;
     border-bottom: 1px solid transparent;
     }
+    .df {
+        color: #fff;
+        border-radius: 0.5rem;
+        border:1px solid rgb(144, 210, 61);
+        background: rgb(144, 210, 61);
+        padding: 0.5rem 1rem;
+        font-size: 1.125rem;
+        box-sizing: border-box;
+
+      }
     /* \Components */
+#modalPresent {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5rem;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#modalPresent .modal {
+    padding: 2rem;
+    background-color: #fff;
+    width: 28rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: relative;
+}
+
+#closeModalPresent {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
     

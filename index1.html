@@ -294,9 +294,9 @@
                             velit veniam!
                         </p>
                     </div>
-                    <div class="take-present">
-                        <a class="dfg" href="#" title="Получить подарок">Получить подарок</a>
-                    </div>
+                    <!-- <div class="take-present"> -->
+                        <button id="getPresentModal" class="dfg" title="Получить подарок">Получить подарок</button>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -739,12 +739,19 @@
 
     </footer>
 
-    <form action="order.php">
+ 
+
+    <div id="modalPresent">
+  <div class="modal">
+        <button id="closeModalPresent">X</button>
+    <!-- <form action="order.php"> -->
         <div class="input-wrap">
             <input id="guest_name" type="text" name="Имя" placeholder="Имя*" />
         </div>
-        <p><input type="email" placeholder="E@mail"></p>
-        <p> <select required>
+        <p><input id="email_guest" type="email" placeholder="E@mail"></p>
+        <p> <select id="select_guest" required>
+                <option value="0">Выбор</option>
+
                 <option value="1">Выбор1</option>
                 <option value="2">Выбор2</option>
                 <option value="3"> Выбор3</option>
@@ -757,7 +764,7 @@
                 <option value="10">Выбор10</option>
             </select>
         </p>
-        <p> <input type="radio" name="name" id="1" />
+        <!-- <p> <input type="radio" name="name" id="1" />
             <label for="1">Выбор1</label>
         </p>
         <p>
@@ -777,11 +784,13 @@
             <a href="#" class="input-plus">
                 <i class="icon icon-add-alt"></i>
             </a>
-        </div>
+        </div> -->
         <div class="input-wrap">
-            <button id="sendPresentInfo">Отправить</button>
+            <button class="df" id="sendPresentInfo">Отправить</button>
         </div>
-    </form>
+    <!-- </form> -->
+  </div>
+    </div>
 
     <script src="js/films.js"></script>
     <script src="js/get_present.js"></script>
