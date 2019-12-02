@@ -10,7 +10,7 @@
 }
 
 .owl-carousel {
-    display: none;
+    display: block;
     width: 100%;
     z-index: 1
 }
@@ -56,7 +56,8 @@
 
 .owl-carousel .owl-item img {
     display: block;
-    width: 100%
+    width: 100%;
+    border-radius: 2.1rem;
 }
 
 .owl-carousel .owl-dots.disabled,

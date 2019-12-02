@@ -13,6 +13,11 @@
         position: absolute;
         right: -1rem;
     }
+    .fd-poster {
+        width: auto;
+        height: 11rem;
+    }
+    
 }
 @media (max-width: 1200px) {
     p {
@@ -48,6 +53,12 @@
     html {
         font-size: 12px;
     }
+
+    .fd-poster {
+        width: auto;
+        height: 15rem;
+    }
+    
 
     .fd-description {
         padding: 1.6375rem;
@@ -298,7 +309,9 @@
     }
 
     .owl-nav {
+        position: relative;
         top: -16.625rem;
+        display: block;
     }
 
     .fd {
@@ -306,9 +319,13 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "p-1 p-1 p-1"
-            "p-2 p-2 p-2"
-            "p-3 p-3 p-3";
+        grid-template-areas: "p-0 p-0 p-0"
+            "p-1 p-1 p-1"
+            "p-2 p-2 p-2";
+    }
+
+    .p-0 {
+        grid-area: p-0;
     }
 
     .p-1 {
@@ -316,11 +333,15 @@
     }
 
     .p-2 {
-        grid-area: p-3;
+        grid-area: p-2;
     }
 
     .p-3 {
-        grid-area: p-2;
+        display: none;
+    }
+
+    .p-4 {
+        display: none;
     }
 
     .p-5 {
@@ -335,21 +356,18 @@
         display: none;
     }
 
-    .p-9 {
+    .p-8 {
         display: none;
     }
-
-    .p-10 {
-        display: none;
-    }
-
-    .p-11 {
-        display: none;
-    }
-    .fd-item {
+    .item {
         width: auto;
         margin: auto;
     }
+    .fd-poster {
+        width: auto;
+        height: 24rem;
+    }
+    
     .fd-description {
         border-radius: 2rem;
     }
@@ -635,11 +653,11 @@
         top: -12.625rem;
     }
     #map {
-        width: 20rem;
+        width: 100%;
         margin: auto;
     }
     .ftr {
-        width: 20rem;
+        width: 100%;
         margin: auto;
     }
     .ficon{
