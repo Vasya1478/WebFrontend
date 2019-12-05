@@ -1,6 +1,16 @@
+let film1 = {}
+let film2 = {}
+let film3 = {}
+let film4 = {}
+let film5 = {}
+let film6 = {}
 
-films = [
-    film1 = {
+
+
+
+
+let films = [
+ film1 = {
         name: 'Человек-паук',
         start: '',
         genre: [0, 1, 2],
