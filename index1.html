@@ -733,7 +733,7 @@
         <div class="modal">
             <button id="closeOrderForm">X</button>
     
-            <div class="modal_form">
+            <div id="placeModalForm" class="modal_form">
                 <div>
                     <span>Название фильма:</span>
                     <span id="orderFilmName"></span>
@@ -755,6 +755,12 @@
                 </div>
 
                 <div>
+                    <span>Номера забронированного билета:</span>
+                    <div id="numberBroneTicket"></div>
+
+                </div>
+
+                <div>
                         <span>Стоимость:</span>
                         <span id="orderFilmTotal"></span>
 
@@ -768,10 +774,13 @@
                         <input type="text" id="orderName"/>
                 </div>
 
-                <div class="input-wrap">
+                <div id="pt" class="input-wrap">
                     <button class="df" id="sendOrder">Забронировать</button>
                 </div>
+
+                
             </div>
+            
         </div>
     </div>
 

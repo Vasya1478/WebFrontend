@@ -16,6 +16,7 @@ let films = [
         genre: [0, 1, 2],
         image: "images/mov1.jpg",
         link: [0, 1, 2],
+        price: 250,
         hire: false,
         new: true,
         description: 'Lorem ipsum dolor sit amet, consectetur',
@@ -27,6 +28,7 @@ let films = [
         genre: [3, 4, 5],
         image: "images/mov2.jpg",
         link: [0, 1, 2],
+        price: 250,
         hire: false,
         new: true,
         description: 'Lorem ipsum dolor sit amet, consectetur',
@@ -38,7 +40,7 @@ let films = [
         genre: [6, 3, 5],
         image: "images/mov4.jpg",
         link: [0, 1, 2],
-
+        price: 250,
         hire: false,
         new: true,
         description: 'Lorem ipsum dolor sit amet, consectetur',
@@ -94,6 +96,250 @@ const genres = [
     'комедия', 
     'мультфильм',
 ]
+
+let place1 = {}
+let place2 = {}
+let place3 = {}
+let place4 = {}
+let place5 = {}
+let place6 = {}
+let place7 = {}
+let place8 = {}
+let place9 = {}
+let place10 = {}
+
+
+
+const countPlace = 20
+
+let places = [
+    // place1 = {
+    //     number: 1,
+    //     price: 100,
+    //     brone: true,
+    // },
+
+    // place2 = {
+    //     number: 2,
+    //     price: 200,
+    //     brone: false,
+    // },
+
+    // place3 = {
+    //     number: 3,
+    //     price: 300,
+    //     brone: true,
+    // },
+
+    // place4 = {
+    //     number: 4,
+    //     price: 400,
+    //     brone: true,
+    // },
+
+    // place5 = {
+    //     number: 5,
+    //     price: 500,
+    //     brone: true,
+    // },
+
+    // place6 = {
+    //     number: 6,
+    //     price: 600,
+    //     brone: false,
+    // },
+
+    // place7 = {
+    //     number: 7,
+    //     price: 700,
+    //     brone: true,
+    // },
+
+    // place8 = {
+    //     number: 8,
+    //     price: 800,
+    //     brone: false,
+    // },
+
+    // place9 = {
+    //     number: 9,
+    //     price: 900,
+    //     brone: true,
+    // },
+
+    // place10 = {
+    //     number: 10,
+    //     price: 1000,
+    //     brone: true,
+    // },
+]
+
+let placeIt = {
+   
+
+    setNumber: function(num) {
+        this.number = num
+    },
+
+    setPrice: function(pr) {
+        this.price = pr
+    },
+    setBrone: function(br) {
+        this.brone = br
+    },
+}
+
+
+function placeArr(num) {
+
+    let number1
+    let price1
+    let brone1
+    for(let i=1; i<=num; i++) {
+        number1 = i
+        if(i <= 3 || i >= num-3) {
+            price1 = 100
+        } else {
+            price1 = 200
+        }
+
+        let broneRand = Math.round(Math.random())
+        console.log(broneRand)
+
+        if(broneRand == 0) brone1 = false
+        else brone1 = true
+       
+            placeIt = {number: number1,
+                price: price1,
+                brone: brone1
+            }
+           
+          
+        
+        places.push(placeIt)
+        console.log(places)
+    }
+}
+        // places.push(pl[i])
+
+
+placeArr(10)
+
+const plac = {
+    
+     order() {
+      
+        if(this.brone) {
+            alert('Место забронировано')
+        } else {
+            this.brone = true
+            let placeNew = document.createElement('span')
+            placeNew.classList.add('placeSpan')
+            placeNew.innerHTML = this.number
+            
+            
+            let numberBroneTicket = document.querySelector('#numberBroneTicket')
+            
+            numberBroneTicket.appendChild(placeNew)
+        }
+        console.log(this)
+    },
+
+    placeToggle(e) {
+
+        let broneStatus = document.querySelector('.placeDiv')
+
+        
+        if(this.brone) {
+            
+    
+        } else {
+            
+            e.target.classList.toggle('placeFree')
+            e.target.classList.toggle('placeBrone')
+           
+
+    
+        }
+    },
+
+    placeContext() {
+        alert(this.price)
+        
+    },
+
+    placeHover(e) {
+        e.target.classList.add('placeHover')
+    },
+
+    placeHoverOut(e) {
+        e.target.classList.remove('placeHover')
+    }
+}
+
+let placesHTML = document.createElement('div')
+placesHTML.classList.add('place')
+
+let placeTarget = document.getElementById('pt')
+
+let placeModal = document.getElementById('placeModalForm')
+placeTarget.insertAdjacentElement('beforebegin', placesHTML)
+//placeModal.insertBefore(placeTarget, placesHTML)
+
+
+
+
+//console.log(placeHTML)
+
+
+
+for(let placeItem of places) {
+
+    let placeDiv = document.createElement('div')
+    placeDiv.innerHTML = placeItem.number
+    placeDiv.classList.add('placeDiv')
+    
+    if(placeItem.brone) {
+        placeDiv.classList.add('placeBrone')
+
+    } else {
+        placeDiv.classList.add('placeFree')
+
+    }
+    
+
+    
+    placeDiv.addEventListener('click', plac.order.bind(placeItem))
+    placeDiv.addEventListener('click', plac. placeToggle.bind(placeDiv))
+    placeDiv.addEventListener('contextmenu', plac.placeContext.bind(placeItem))
+    placeDiv.addEventListener('mouseover', plac.placeHover.bind(placeDiv))
+    placeDiv.addEventListener('mouseout', plac.placeHoverOut.bind(placeDiv))
+
+
+    
+
+
+
+    placesHTML.appendChild(placeDiv)
+}
+
+
+// function order() {
+//         if(this.brone) {
+//             alert('Место забронировано')
+//         } else {
+//             this.brone = true
+//             let numberBroneTicket = document.querySelector('#numberBroneTicket')
+//             numberBroneTicket.innerHTML = this.number
+           
+//         }
+//         console.log(this.price)
+// }
+
+
+
+
+
 
 const links = [
     `<a class="fd-l" href="https://twitter.com" target="_blank" title="Twitter">

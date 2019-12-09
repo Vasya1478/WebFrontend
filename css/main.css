@@ -1042,4 +1042,41 @@ border-bottom: 1px solid #90d23d;
     right: 1rem;
     top: 1rem;
 }
+
+.place {
+    display: flex;
+    margin: 2rem;
+}
+
+.place:hover {
+    cursor: pointer;
+}
+
+.placeDiv {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+
+.placeBrone {
+    background-color: darkorange;
+}
+
+.placeFree {
+    background-color: darkgreen;
+}
+
+.placeHover {
+    background-color: gray !important;
+}
+
+.placeSpan {
+    padding-left: 1rem;
+    font-size: 14px;
+}
     
