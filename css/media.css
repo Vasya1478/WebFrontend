@@ -17,6 +17,12 @@
         width: auto;
         height: 11rem;
     }
+
+    .fd-inner {
+    
+        width: auto;
+        height: 11rem;
+    }
     
 }
 @media (max-width: 1200px) {
@@ -47,7 +53,7 @@
     .head-block {
         min-height: 40rem;
 }
-
+}
 
 @media (max-width: 1000px) {
     html {
@@ -59,6 +65,10 @@
         height: 15rem;
     }
     
+    .fd-inner {
+        width: 16rem;
+        height: 15rem;
+    }
 
     .fd-description {
         padding: 1.6375rem;
@@ -124,7 +134,7 @@
     }
 
     .head-block__menu {
-        padding-left: 12.125rem;
+        
         font-size: 0.8rem;
         width: 86%;
     }
@@ -266,6 +276,7 @@
     .menu {
         display: none;
         position: fixed;
+       
         left: 0;
         top: 0;
         bottom: 0;
@@ -365,7 +376,12 @@
     }
     .fd-poster {
         width: auto;
-        height: 24rem;
+        height: 23rem;
+    }
+    .fd-inner {
+       height: 23rem;
+        width: 23rem;
+        margin: auto;
     }
     
     .fd-description {
@@ -373,13 +389,13 @@
     }
     .fd-text1 {
         font-size: 3rem;
-        padding: 2rem;
+        padding: 1rem;
         line-height: 2.5rem;
     }
   
     .fd-text2 {
         font-size: 2rem;
-        padding: 2rem;
+        padding: 1rem;
     }
     .fd-hr {
         width: 7rem;
@@ -435,7 +451,11 @@
     }
 
     .menu-burger {
-        float: right;
+        float: left;
+        margin-left: 0;
+    }
+    .logo {
+        width: 25%;
     }
 
     header {
@@ -527,6 +547,11 @@
     }
     input[type="file"] + label {
         padding: 0.9375rem 0 0.9375rem 0;
+    }
+    #modalPresent .modal,
+    #orderForm .modal,
+    #cityForm .modal {
+        width: 20rem;
     }
 
 }
@@ -679,6 +704,12 @@
         }
     input[type="file"] + label {
         padding: 0.9375rem 0 0.9375rem 0;
+    }
+
+    #modalPresent .modal,
+    #orderForm .modal,
+    #cityForm .modal {
+        width: 20rem;
     }
 
 }

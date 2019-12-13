@@ -434,10 +434,30 @@ width: 64.375rem;
 margin: auto;
 }
 
-header {
-    padding-top: 3.5125rem;
-    margin-bottom: 12.8125rem;
+
+
+.header-wrap {
+    background-color: rgba(0, 0, 0, .3);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all .3s ease;
 }
+
+.header {
+    width: 64.375rem;
+    margin: auto;
+    padding-top: 1.5125rem;
+   
+}
+
+.header-wrap.out {
+    transform: translateY(-100%);
+
+}
+
 .head-block__row {
     line-height: 2.875rem;
 }
@@ -461,6 +481,10 @@ header {
     float: right;
     padding-right: 0;
 }
+#city_name {
+    text-transform: initial;
+text-decoration-line: underline;
+}
 
 .menu-ref:hover {
 color: #90d23d;
@@ -474,6 +498,7 @@ border-bottom: 1px solid #90d23d;
    text-align: center;
    margin: 0 auto 0 auto;
    padding-bottom: 22.5rem;
+   padding-top: 10.5125rem;
 }
 
 
@@ -1014,7 +1039,8 @@ border-bottom: 1px solid #90d23d;
       }
     /* \Components */
 #modalPresent,
-#orderForm {
+#orderForm,
+#cityForm {
     display: none;
     position: fixed;
     width: 100%;
@@ -1026,8 +1052,13 @@ border-bottom: 1px solid #90d23d;
     z-index: 1000;
 }
 
+#city_name,
+#search_result {
+    cursor: pointer;
+}
 #modalPresent .modal,
-#orderForm .modal {
+#orderForm .modal,
+#cityForm .modal{
     padding: 2rem;
     background-color: #fff;
     width: 28rem;
@@ -1037,7 +1068,8 @@ border-bottom: 1px solid #90d23d;
 }
 
 #closeModalPresent,
-#closeOrderForm {
+#closeOrderForm,
+#closeCityForm {
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -1061,15 +1093,15 @@ border-bottom: 1px solid #90d23d;
     font-weight: bold;
     margin-left: 0.5rem;
 }
-
+.placeFree {
+    background-color: darkgreen;
+}
 
 .placeBrone {
     background-color: darkorange;
 }
 
-.placeFree {
-    background-color: darkgreen;
-}
+
 
 .placeHover {
     background-color: gray !important;
@@ -1080,3 +1112,28 @@ border-bottom: 1px solid #90d23d;
     font-size: 14px;
 }
     
+.to_top {
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+    vertical-align: middle;
+    position: relative;
+    top: 25%;
+    
+   
+}
+
+.to_top:hover {
+    cursor: pointer;
+}
+
+.to_top_wrap {
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 100%;
+   
+}

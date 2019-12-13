@@ -1,3 +1,28 @@
+let menu = document.getElementById('menub')
+let menu2 = document.getElementById('men')
+let menu3 = document.getElementById('mnt')
+
+
+menu.onclick = function() {
+    console.log('menu')
+    menu.style.display = 'none'
+    menu3.style.display = 'block'
+    
+    menu3.onclick = function() {
+        console.log('poiu')
+        menu3.style.display = 'none'
+        menu.style.display = 'block'
+    }
+
+
+}
+
+
+
+
+
+
+
 let film1 = {}
 let film2 = {}
 let film3 = {}
@@ -23,7 +48,7 @@ let films = [
     },
 
     film2 = {
-        name: 'Собачья жизнь 2',
+        name: "Собачья жизнь 2",
         start: '',
         genre: [3, 4, 5],
         image: "images/mov2.jpg",
@@ -217,7 +242,7 @@ function placeArr(num) {
           
         
         places.push(placeIt)
-        console.log(places)
+        //console.log(places)
     }
 }
         // places.push(pl[i])
@@ -242,25 +267,25 @@ const plac = {
             
             numberBroneTicket.appendChild(placeNew)
         }
-        console.log(this)
+        
     },
 
     placeToggle(e) {
 
-        let broneStatus = document.querySelector('.placeDiv')
-
+        
+      
         
         if(this.brone) {
+         
             
-    
-        } else {
-            
-            e.target.classList.toggle('placeFree')
-            e.target.classList.toggle('placeBrone')
            
+        } else {
 
-    
+            e.target.classList.add('placeBrone')
+           e.target.classList.remove('placeFree')
+        
         }
+        
     },
 
     placeContext() {
@@ -310,7 +335,7 @@ for(let placeItem of places) {
 
     
     placeDiv.addEventListener('click', plac.order.bind(placeItem))
-    placeDiv.addEventListener('click', plac. placeToggle.bind(placeDiv))
+    placeDiv.addEventListener('click', plac.placeToggle.bind(placeDiv))
     placeDiv.addEventListener('contextmenu', plac.placeContext.bind(placeItem))
     placeDiv.addEventListener('mouseover', plac.placeHover.bind(placeDiv))
     placeDiv.addEventListener('mouseout', plac.placeHoverOut.bind(placeDiv))
@@ -322,7 +347,6 @@ for(let placeItem of places) {
 
     placesHTML.appendChild(placeDiv)
 }
-
 
 // function order() {
 //         if(this.brone) {
@@ -446,7 +470,9 @@ for(let i = 0; i < filmsHires.length; i++) {
     const filmStart = film.getStart.apply(filmsHires[i])
     const filmGenre = film.getGenre.apply(filmsHires[i])
     const filmPrice = film.getPrice.apply(filmsHires[i])
-    let filmsHir = document.getElementById('filmsHir')
+    let filmsHir = document.getElementById('filmsHir').getElementsByTagName('tbody')[0]
+
+ //   $(filmName).attr('alt="ojoj"')
 
    // console.log()
 
@@ -526,7 +552,7 @@ let orderFilmTotal = document.getElementById('orderFilmTotal')
 
 
 for(let i = 0, j = 0; i < filmsNew.length ; i++) {
-    const filmName = film.getName.apply(filmsNew[i])
+    const filmName = film.getName.bind(filmsNew[i])()
     const filmImage = film.getImage.apply(filmsNew[i])
     const filmLink = film.getLink.apply(filmsHires[i])
 
@@ -534,7 +560,7 @@ for(let i = 0, j = 0; i < filmsNew.length ; i++) {
 
     let filmNewHtml = `
     <div class="fd-inner">
-        <div class="fd-poster"><img class="" src=${filmImage} alt=${filmName} /></div>
+        <div class="fd-poster"><img src=${filmImage} alt='${filmName}'/></div>
         <div class="fd-description">
             <p class="fd-text1">${filmName}</p>
             <hr class="fd-hr">
