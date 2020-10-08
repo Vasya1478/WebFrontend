@@ -1,1 +1,0 @@
-c:\Users\а\Desktop\UI\CINEMA\info.php
